@@ -12,3 +12,8 @@
 .no-svg .logo {
   background: url(../img/bc-logo-ondark.png) no-repeat center center;
 }
+
+.disclaimer {
+    font-size: smaller;
+    color: darkgrey;
+}
