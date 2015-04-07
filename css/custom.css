@@ -1,0 +1,14 @@
+.logo {
+  display: block;
+  text-indent: -9999px;
+  background-origin: content-box;
+  width: 10rem;
+  height: 2rem;
+  background: url(../img/bc-logo-ondark.svg) no-repeat center center;
+  background-size: 8rem 2rem;
+  color: white;
+}
+
+.no-svg .logo {
+  background: url(../img/bc-logo-ondark.png) no-repeat center center;
+}
