@@ -8,6 +8,17 @@
 
     <link rel="stylesheet" href="css/custom.css">
 
+<!-- Stretch the player 100% of container -->
+    <style type="text/css" media="screen">
+     .BrightcoveExperience {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+
     <script src="js/vendor/modernizr.js"></script>
 
     <link rel="shortcut icon" href="favicon.ico">
@@ -29,8 +40,8 @@
         <section class="top-bar-section">
           <!-- Right Nav Section -->
           <ul class="right">
-            <li class="active"><a href="./">Basic Player</a></li>
-            <li><a href="responsive.html">Responsive Player</a></li>
+            <li><a href="./">Basic Player</a></li>
+            <li class="active"><a href="#">Responsive Player</a></li>
             <li class="has-dropdown">
               <a href="#">Right Button Dropdown</a>
               <ul class="dropdown">
@@ -55,6 +66,11 @@
       	<div class="panel">
 	        <h3>Amazing to see you here!</h3>
 	        <p>This is a very basic example of embedding a single video Brightcove player into a webpage.</p>
+
+<!-- Wrap Brightcove Player into a container with an intrinsic ratio
+http://docs.brightcove.com/en/video-cloud/smart-player-api/samples/responsive-sizing.html
+-->
+<div class="video-container">
 
 <!-- Start of Brightcove Player -->
 
@@ -90,6 +106,8 @@ the rest of the HTML is processed and the page load is complete, remove the line
 <script type="text/javascript">brightcove.createExperiences();</script>
 
 <!-- End of Brightcove Player -->
+
+</div>
 
           <p>Feel free to explore the source code of this page.</p>
         </div>

@@ -17,3 +17,9 @@
     font-size: smaller;
     color: darkgrey;
 }
+
+.video-container {
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%;
+}
