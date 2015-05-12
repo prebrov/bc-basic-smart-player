@@ -87,6 +87,16 @@
 	        <h3>Amazing to see you here!</h3>
 	        <p>This is a very basic example of embedding a single video Brightcove player into a webpage.</p>
 
+          <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+
 <!-- Wrap Brightcove Player into a container with an intrinsic ratio
 http://docs.brightcove.com/en/video-cloud/smart-player-api/samples/responsive-sizing.html
 -->
