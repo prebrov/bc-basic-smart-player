@@ -11,7 +11,7 @@
 
 <!-- Stretch the player 100% of container -->
     <style type="text/css" media="screen">
-     .BrightcoveExperience {
+     .PerformExperience {
         position: absolute;
         top: 0;
         left: 0;
@@ -68,17 +68,8 @@
       <div class="large-12 columns">
       	<div class="panel">
 	        <h3>Amazing to see you here!</h3>
-	        <p>This is a very basic example of embedding a single video Brightcove player into a webpage.</p>
+	        <p>This is a very basic example of embedding a single Brightcove Perform Player into a webpage.</p>
 
-          <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-    </script>
 
 <!-- Wrap Brightcove Player into a container with an intrinsic ratio
 http://docs.brightcove.com/en/video-cloud/smart-player-api/samples/responsive-sizing.html
@@ -96,7 +87,7 @@ By use of this code snippet, I agree to the Brightcove Publisher T and C
 found at https://accounts.brightcove.com/en/terms-and-conditions/.
 -->
 
-<iframe src='//players.brightcove.net/4165107283001/c8d53939-c097-4ac4-890a-26a1652704f7_default/index.html' allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+<iframe class="PerformExperience" src='//players.brightcove.net/4165107283001/c8d53939-c097-4ac4-890a-26a1652704f7_default/index.html' allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
 
 <!--
 This script tag will cause the Brightcove Players defined above it to be created as soon
