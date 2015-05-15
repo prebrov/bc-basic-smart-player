@@ -3,10 +3,22 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Brightcove Demo</title>
+    <title>Brightcove Perform Demo</title>
+
     <link rel="stylesheet" href="css/foundation.css" />
 
     <link rel="stylesheet" href="css/custom.css">
+
+<!-- Stretch the player 100% of container -->
+    <style type="text/css" media="screen">
+     .BrightcoveExperience {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
 
     <script src="js/vendor/modernizr.js"></script>
 
@@ -20,7 +32,7 @@
 
         <ul class="title-area">
           <li class="name logo">
-            <h1><a href="./">Brightcove Demo</a></h1>
+            <h1><a href="./">Brightcove Perform Demo</a></h1>
           </li>
            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
           <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -29,14 +41,14 @@
         <section class="top-bar-section">
           <!-- Right Nav Section -->
           <ul class="right">
-            <li class="active"><a href="./">Basic Player</a></li>
+            <li><a href="./">Basic Player</a></li>
             <li><a href="responsive.html">Responsive Player</a></li>
             <li><a href="facebook.html">Facebook Demo</a></li>
 
             <li class="has-dropdown">
               <a href="#">Others</a>
               <ul class="dropdown">
-                <li><a href="#">Brightcove Perform</a></li>
+                <li class="active"><a href="#">Brightcove Perform</a></li>
                 <li><a href="#">Placeholder</a></li>
               </ul>
             </li>
@@ -58,7 +70,22 @@
 	        <h3>Amazing to see you here!</h3>
 	        <p>This is a very basic example of embedding a single video Brightcove player into a webpage.</p>
 
-<!-- Start of Brightcove Player -->
+          <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+<!-- Wrap Brightcove Player into a container with an intrinsic ratio
+http://docs.brightcove.com/en/video-cloud/smart-player-api/samples/responsive-sizing.html
+-->
+<div class="video-container">
+
+<!-- Start of Brightcove Perform Player -->
 
 <div style="display:none">
 
@@ -69,20 +96,7 @@ By use of this code snippet, I agree to the Brightcove Publisher T and C
 found at https://accounts.brightcove.com/en/terms-and-conditions/.
 -->
 
-<script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
-
-<object id="myExperience4147573782001" class="BrightcoveExperience">
-  <param name="bgcolor" value="#FFFFFF" />
-  <param name="width" value="480" />
-  <param name="height" value="270" />
-  <param name="playerID" value="4143306065001" />
-  <param name="playerKey" value="AQ~~,AAADxLSF3Kk~,OgxCkuVWmcXBWV8yUIiDHAoZJp4Cvfxz" />
-  <param name="isVid" value="true" />
-  <param name="isUI" value="true" />
-  <param name="dynamicStreaming" value="true" />
-
-  <param name="@videoPlayer" value="4147573782001" />
-</object>
+<iframe src='//players.brightcove.net/4165107283001/c8d53939-c097-4ac4-890a-26a1652704f7_default/index.html' allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
 
 <!--
 This script tag will cause the Brightcove Players defined above it to be created as soon
@@ -92,6 +106,10 @@ the rest of the HTML is processed and the page load is complete, remove the line
 <script type="text/javascript">brightcove.createExperiences();</script>
 
 <!-- End of Brightcove Player -->
+
+</div>
+
+          <p><div class="fb-like" data-send="false" data-width="450" data-show-faces="true" data-colorscheme="dark" data-font="trebuchet ms"></div></p>
 
           <p>Feel free to explore the source code of this page.</p>
         </div>
@@ -123,7 +141,7 @@ the rest of the HTML is processed and the page load is complete, remove the line
 	        		<p><a href="https://github.com/BrightcoveLearning/BCL-LearningSamples">Brightcove Learning Samples on Github</a><br />Samples and other files created for external or internal customers.</p>
 	        	</div>
             <div class="large-3 medium-3 columns">
-              <p><a href="http://support.brightcove.com/en/video-cloud/docs/topics/3331">Creating & Customizing Players</a><br />Check out our best in industry guides on customizing players in browser.</p>
+              <p><a href="http://support.brightcove.com/en/video-cloud/docs/setting-videos-not-hosted-brightcove-play-within-facebook">Setting Videos not Hosted on Brightcove to Play within Facebook</a><br />Try sharing this video on Facebook. It should be playable right in your timeline, have all the metadata and link back here.</p>
             </div>
             <div class="large-3 medium-3 columns">
               <p><a href="http://docs.brightcove.com/en/video-cloud/index.html">Developer Docs</a><br />If you're developer digging deep into our APIs, check out or Dev Docs. They're crazy good.</p>
