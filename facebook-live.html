@@ -1,0 +1,203 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brightcove Demo</title>
+
+    <meta property="fb:admins" content="100009441878541" />
+
+    <meta property="og:title" content="Caminandes: Gran Dillama"/>
+    <meta property="og:description" content="(c) copyright 2014, Blender Foundation / www.caminandes.com"/>
+    <meta property="og:type" content="movie"/>
+    <meta property="og:video:width" content="480" />
+    <meta property="og:video:height" content="270" />
+
+    <meta property="og:url" content="http://solutions.brightcove.com/prebrov/player-examples/facebook-live.html"/>
+    <meta property="og:video"  content="http://c.brightcove.com/services/viewer/federated_f9/?isVid=1&isUI=1&playerID=4143306065001&autoStart=true&videoID=4147573782001"/>
+    <meta property="og:video:secure_url"  content="https://secure.brightcove.com/services/viewer/federated_f9/?isVid=true&isUI=true&playerID=4143306065001&secureConnections=true&videoID=4147573782001&autoStart=true"/>
+    <meta property="og:video:type" content="application/x-shockwave-flash"/>
+
+    <meta property="og:video"  content="http://uds.ak.o.brightcove.com/4143377145001/4143377145001_4148314332001_02-gran-dillama-1080p.mp4"/>
+    <meta property="og:video:type" content="video/mp4"/>
+    <meta property="og:image" content="http://brightcove04.o.brightcove.com/4143377145001/4143377145001_4148299872001_vs-551c90c7e4b0722a04e5e04b-1592194022001.jpg?pubId=4143377145001"/>
+
+    <link rel="stylesheet" href="css/foundation.css" />
+
+    <link rel="stylesheet" href="css/custom.css">
+
+<!-- Stretch the player 100% of container -->
+    <style type="text/css" media="screen">
+     .BrightcoveExperience {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+
+    <script src="js/vendor/modernizr.js"></script>
+
+    <link rel="shortcut icon" href="favicon.ico">
+  </head>
+
+  <body>
+
+    <div class="contain-to-grid fixed">
+      <nav class="top-bar" data-topbar role="navigation">
+
+        <ul class="title-area">
+          <li class="name logo">
+            <h1><a href="./">Brightcove Demo</a></h1>
+          </li>
+           <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+
+        <section class="top-bar-section">
+          <!-- Right Nav Section -->
+          <ul class="right">
+            <li><a href="./">Basic Player</a></li>
+            <li><a href="responsive.html">Responsive Player</a></li>
+            <li class="active"><a href="#">Facebook Demo</a></li>
+
+            <li class="has-dropdown">
+              <a href="#">Others</a>
+              <ul class="dropdown">
+                <li><a href="perform.html">Brightcove Perform</a></li>
+                <li><a href="#">Placeholder</a></li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+      </nav>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns">
+        <h1>Brightcove Demo</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns">
+      	<div class="panel">
+	        <h3>Amazing to see you here!</h3>
+	        <p>This is a very basic example of embedding a single video Brightcove player into a webpage.</p>
+
+          <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+<!-- Wrap Brightcove Player into a container with an intrinsic ratio
+http://docs.brightcove.com/en/video-cloud/smart-player-api/samples/responsive-sizing.html
+-->
+<div class="video-container">
+
+
+<!-- Start of Brightcove Player -->
+
+<div style="display:none">
+
+</div>
+
+<!--
+By use of this code snippet, I agree to the Brightcove Publisher T and C
+found at https://accounts.brightcove.com/en/terms-and-conditions/.
+-->
+
+<script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+
+<object id="myExperience4243855274001" class="BrightcoveExperience">
+  <param name="bgcolor" value="#FFFFFF" />
+  <param name="width" value="480" />
+  <param name="height" value="270" />
+  <param name="playerID" value="4239082752001" />
+  <param name="playerKey" value="AQ~~,AAADaW9-K0k~,h7TfaemECW2v2V1CY5awzrCOh1_tP6L6" />
+  <param name="isVid" value="true" />
+  <param name="isUI" value="true" />
+  <param name="dynamicStreaming" value="true" />
+  <param name="linkBaseURL" value="http://solutions.brightcove.com/prebrov/player-examples/facebook.html" />
+
+  <param name="@videoPlayer" value="4243855274001" />
+</object>
+
+<!--
+This script tag will cause the Brightcove Players defined above it to be created as soon
+as the line is read by the browser. If you wish to have the player instantiated only after
+the rest of the HTML is processed and the page load is complete, remove the line.
+-->
+<script type="text/javascript">brightcove.createExperiences();</script>
+
+<!-- End of Brightcove Player -->
+
+
+</div>
+
+          <p><div class="fb-like" data-send="false" data-width="450" data-show-faces="true" data-colorscheme="dark" data-font="trebuchet ms"></div></p>
+
+          <p>Feel free to explore the source code of this page.</p>
+        </div>
+
+        <div class="panel">
+          <h3>Learn more</h3>
+          <form action="http://support.brightcove.com/en/video-cloud/search/"  accept-charset="UTF-8" method="post">
+            <div class="row">
+              <div class="large-12 columns">
+                <div class="row collapse">
+                  <div class="large-10 columns">
+                    <input type="text" placeholder="Have a question about Brightcove?" name="search_block_form">
+                  </div>
+                  <div class="large-2 columns">
+                    <button type="submit" class="button prefix">Search</button>
+                    <input type="hidden" name="form_build_id" id="form-1b2d71d83ffa155abd063cae196a7104" value="form-1b2d71d83ffa155abd063cae196a7104"  />
+                    <input type="hidden" name="form_id" id="edit-search-block-form" value="search_block_form"  />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+
+	        <div class="row">
+	        	<div class="large-3 medium-3 columns">
+    	    		<p><a href="https://github.com/prebrov/bc-basic-smart-player">This page on GitHub</a><br />Get the full source code and play with it.</p>
+    	    	</div>
+	        	<div class="large-3 medium-3 columns">
+	        		<p><a href="https://github.com/BrightcoveLearning/BCL-LearningSamples">Brightcove Learning Samples on Github</a><br />Samples and other files created for external or internal customers.</p>
+	        	</div>
+            <div class="large-3 medium-3 columns">
+              <p><a href="http://support.brightcove.com/en/video-cloud/docs/setting-videos-not-hosted-brightcove-play-within-facebook">Setting Videos not Hosted on Brightcove to Play within Facebook</a><br />Try sharing this video on Facebook. It should be playable right in your timeline, have all the metadata and link back here.</p>
+            </div>
+            <div class="large-3 medium-3 columns">
+              <p><a href="http://docs.brightcove.com/en/video-cloud/index.html">Developer Docs</a><br />If you're developer digging deep into our APIs, check out or Dev Docs. They're crazy good.</p>
+            </div>
+					</div>
+      	</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="small-12 columns">
+        <p class="disclaimer">This page was created by <a href="mailto:prebrov@brightcove.com?Subject=From%20your%20Sample%20Pages" target="_blank">Pavel Rebrov</a> and uses <a href="http://foundation.zurb.com" title="Zurb Foundation">Zurb Foundation</a> and some of its dependencies. Brightcove Player doesn't require any of it.</p>
+      </div>
+    </div>
+
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
+
+
+<!-- TESTING DEPLOYMENT 2015-04-07 14:38 SGT -->
