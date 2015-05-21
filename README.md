@@ -1,3 +1,3 @@
-* Brightcove Player Examples *
+# Brightcove Player Examples
 
-Various example of Brightcove Player implementation on websites
+Various example of Brightcove Player implementation in web pages
